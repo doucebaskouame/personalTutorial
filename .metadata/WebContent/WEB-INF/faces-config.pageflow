@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13854840301250" configfile="/jpa.jsf.example/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="add" x="122" y="178" id="pf13855466058840" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13855467616982" path="/add.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="list" x="338" y="562" id="pf13855467616981" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf13856317353040" inlinks="pf13855467616982 pf13856317353041" path="/list.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="edit" x="122" y="562" id="pf13856317353043" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13856317353041" inlinks="pf13856317353040" path="/edit.jsp"/>
+  <links id="pf13855467616982" target="pf13855467616981" source="pf13855466058840" outcome="list" redirect="true"/>
+  <links id="pf13856317353041" target="pf13855467616981" source="pf13856317353043" outcome="list" redirect="true"/>
+  <links id="pf13856317353040" target="pf13856317353043" source="pf13855467616981" outcome="edit" redirect="true"/>
+</pageflow:Pageflow>
